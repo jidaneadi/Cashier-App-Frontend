@@ -2,7 +2,7 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import TabsNav from './tabnav'
-import LoginScreen from '../../views/screen/home/LoginScreen'
+import LoginScreen from '../../views/screen/auth/LoginScreen'
 
 const Stack = createNativeStackNavigator();
 export default function Routes() {

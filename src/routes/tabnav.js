@@ -1,9 +1,9 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "react-native-vector-icons";
-import CashierScreen from "../../views/screen/home/CashierScreen";
-import TransaksiScreen from "../../views/screen/home/TransaksiScreen";
-import ProductScreen from "../../views/screen/home/ProductScreen";
+import CashierScreen from "../../views/screen/home/MainHome";
+import TransaksiScreen from "../../views/screen/transaksi/MainTransaksi";
+import ProductScreen from "../../views/screen/product/MainProduct";
 import { SafeAreaView } from "react-native-safe-area-context";
 import GlobalStyle from "../styles/GlobalStyle";
 
@@ -14,7 +14,8 @@ export default function TabsNav() {
     <Tabs.Navigator
       screenOptions={{
         // tabBarShowLabel:false,
-        tabBarActiveTintColor: "#04364A",
+        tabBarActiveTintColor: "#000000",
+        tabBarInactiveTintColor:"#000000",
         headerShown: false,
         tabBarStyle: {
           position: "absolute",
@@ -23,6 +24,7 @@ export default function TabsNav() {
           right: 25,
           borderRadius:10,
           padding: 10,
+          backgroundColor:"#A25ABF"
         },
       }}
     >
@@ -32,7 +34,7 @@ export default function TabsNav() {
             <Ionicons
               name={focused ? "calculator" : "calculator-outline"}
               size={24}
-              color="#04364A"
+              color="#000000"
             />
           ),
         }}
@@ -45,7 +47,7 @@ export default function TabsNav() {
             <Ionicons
               name={focused ? "document-text" : "document-text-outline"}
               size={24}
-              color="#04364A"
+              color="#000000"
             />
           ),
         }}
@@ -58,7 +60,7 @@ export default function TabsNav() {
             <Ionicons
               name={focused ? "fast-food" : "fast-food-outline"}
               size={24}
-              color="#04364A"
+              color="#000000"
             />
           ),
         }}

@@ -1,4 +1,4 @@
-import { View, StyleSheet, SafeAreaView } from "react-native";
+import { View, StyleSheet } from "react-native";
 import React from "react";
 import Logo from "../../../src/components/Logo";
 import { Button, Text, TextInput } from "react-native-paper";
